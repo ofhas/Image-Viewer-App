@@ -21,8 +21,8 @@ class App(QWidget):
                      str(pathlib.Path().absolute()) + "\\2.png",
                      str(pathlib.Path().absolute()) + "\\3.png"]
 
-    # in this method we'll create and position the buttons of the app, also well define each button functionality and create the main window,
-    # i.e (connecting it to it's method of)
+    # in this method we'll create and position the buttons of the app, also well define each button functionality i.e(connecting it to it's method of), and create the main window,
+    # 
     def initUI(self):
         self.setWindowTitle(self.title)
         self.resize(self.width, self.height)
