@@ -22,22 +22,22 @@ class App(QWidget):
                      str(pathlib.Path().absolute()) + "\\3.png"]
 
     # in this method we'll create and position the buttons of the app, also well define each button functionality i.e(connecting it to it's method), and create the main window,
-    # 
+    #
     def initUI(self):
         self.setWindowTitle(self.title)
         self.resize(self.width, self.height)
         self.button1 = QPushButton('#1', self)
-        self.button1.move(40, 20)
+        self.button1.move(224, 20)
         self.button1.resize(100, 100)
         self.button1.clicked.connect(self.exitApp)
 
         self.button2 = QPushButton('#2', self)
-        self.button2.move(440, 800)
+        self.button2.move(512, 800)
         self.button2.resize(280, 120)
         self.button2.clicked.connect(self.saveImage)
 
         self.button3 = QPushButton('#3', self)
-        self.button3.move(1000, 190)
+        self.button3.move(1000, 224)
         self.button3.resize(220, 120)
         self.button3.clicked.connect(self.displayImages)
 
@@ -57,9 +57,9 @@ class App(QWidget):
 
         imagePathNew = self.path[self.i]
         self.pixmap = QPixmap(imagePathNew)
-        self.pixmap = self.pixmap.scaled(850, 600)
+        self.pixmap = self.pixmap.scaled(640, 512)
         self.label.setPixmap(self.pixmap)
-        self.label.move(140, 190)
+        self.label.move(320, 224)
         self.label.adjustSize()
         self.i += 1
         if self.i >= 2:
@@ -74,7 +74,7 @@ class App(QWidget):
         if self.j > 1:
             self.button4.hide()
         self.button4 = QPushButton('#4', self)
-        self.button4.move(1000, 320)
+        self.button4.move(1000, 360)
         self.button4.resize(220, 120)
         self.button4.show()
         self.button4.clicked.connect(self.deleteButton)
@@ -82,7 +82,7 @@ class App(QWidget):
     def deleteButton(self):
         self.button4.hide()
         self.pixmap = QPixmap(self.path[0])
-        self.pixmap = self.pixmap.scaled(850, 600)
+        self.pixmap = self.pixmap.scaled(640, 512)
         self.label.setPixmap(self.pixmap)
         self.label.adjustSize()
         self.i = 1
