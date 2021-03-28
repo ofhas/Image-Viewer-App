@@ -93,9 +93,8 @@ class App(QWidget):
         self.label.setPixmap(self.pixmap)
         self.label.adjustSize()
         self.i = 1
-# here we'll create the method that enables to save the current image to a bmp file by using the self.pixmap that was
-    # created on the displayImages method error handling is also define here in case the user didn't press button 3
-    # and no image is presented, if doing so the user should get a message saying no images are loaded
+# here we'll create the method that enables to save the current image to a bmp file by using the self.pixmap in the displayImage method
+    # 
     def saveImage(self):
         filePath, _ = QFileDialog.getSaveFileName(self, "Save Image", "",
                                                       "BMP(*.bmp);;All Files(*.*) ")
