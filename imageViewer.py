@@ -37,7 +37,7 @@ class App(QWidget):
         self.button2.clicked.connect(self.saveImage)
 
         self.button3 = QPushButton('#3', self)
-        self.button3.move(1000, 224)
+        self.button3.move(1000, 256)
         self.button3.resize(220, 120)
         self.button3.clicked.connect(self.displayImages)
 
@@ -74,7 +74,7 @@ class App(QWidget):
         if self.j > 1:
             self.button4.hide()
         self.button4 = QPushButton('#4', self)
-        self.button4.move(1000, 360)
+        self.button4.move(1000, 380)
         self.button4.resize(220, 120)
         self.button4.show()
         self.button4.clicked.connect(self.deleteButton)
