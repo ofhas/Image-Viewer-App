@@ -16,7 +16,7 @@ Button 4 displays the first image, also it becomes hidden after being pressed.
 3, In your ide/terminal/powershell type the following: "pip install PyQt5" and also "pip install pathlib".
 
 After running successfully and pressing the #3 button, the app should look like this:\
-![alt text](https://github.com/ofhas/Image-Viewer-App/blob/main/readme_image/Capture11.JPG)
+![alt text](https://github.com/ofhas/Image-Viewer-App/blob/main/readme_images/Capture11.JPG)
 
 Error handling when pressding button #2 when no images are loaded:\
-![alt text](https://github.com/ofhas/Image-Viewer-App/blob/main/readme_image/Capture111.JPG)
+![alt text](https://github.com/ofhas/Image-Viewer-App/blob/main/readme_images/Capture111.JPG)
