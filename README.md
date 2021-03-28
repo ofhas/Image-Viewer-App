@@ -1,6 +1,7 @@
 # Image-Viewer-App
 **A simple GUI app that performs different methods and functionalities of pyqt5 GUI module.**
 
+The project conssit of two version the first version no image is displayed until button #3 is pressed, the 2nd version has the first image displayed by default without the need of pressing button #3.
 
 In this project we'll using the pyqt5 GUI module, we'll create main window, buttons which displying images, exiting the window, and saving the current image presented.
 
