@@ -59,7 +59,7 @@ class App(QWidget):
         self.pixmap = QPixmap(imagePathNew)
         self.pixmap = self.pixmap.scaled(640, 512)
         self.label.setPixmap(self.pixmap)
-        self.label.move(320, 224)
+        self.label.move(320, 256)
         self.label.adjustSize()
         self.i += 1
         if self.i >= 2:
